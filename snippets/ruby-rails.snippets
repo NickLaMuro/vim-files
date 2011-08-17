@@ -1,53 +1,28 @@
-#artpp
 snippet artpp
 	assert_redirected_to <+<+model+>s_path+>
-
-#rf
 snippet rf
 	render :file => "${1:filepath}"
-
-#ra
 snippet ra
 	render :action => "${1:action}"
-
-#art
 snippet art
 	assert_redirected_to ${1::action => "${2:index}"}
-
-#ri
 snippet ri
 	render :inline => "<+<%= 'hello' %>+>"
-
-#wants
 snippet wants
 	wants.<+js|xml|html+> <+{ <++> }+>
-
-#tch
 snippet tch
 	t.change :<+name+><+, :<+string+><+, :<+limit+> => <+80+>+>+>
 	<++>
-
-#mrw
 snippet mrw
 	mattr_accessor :${1:attr_names}
-
-#rxml
 snippet rxml
 	render :xml => ${1:text to render}
-
-#vpo
 snippet vpo
 	validates_presence_of :${1:attribute}
-
-#flash
 snippet flash
 	flash[:${1:notice}] = "${2}"
-
-#vc
 snippet vc
 	validates_confirmation_of :${1:attribute}
-
-#defshow
 snippet defshow
 	def show
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
@@ -57,58 +32,32 @@ snippet defshow
 			wants.xml  { render :xml => @$1 }
 		end
 	end${3}
-
-#mcht
 snippet mcht
 	change_table :${1:table_name} do |t|
 		${2}
 	end
-
-#ril
 snippet ril
 	render :inline => "${1:<%= 'hello' %>}", :locals => { ${2::name} => "${3:value}"${4} }
-
-#vi
 snippet vi
 	validates_inclusion_of :${1:attribute}, :in => %w(${2: mov avi })
-
-#hmt
 snippet hmt
 	has_many :${1:object}, :through => :${2:object}
-
-#hmd
 snippet hmd
 	has_many :<+object+>s<+, :class_name => "<+object+>", :foreign_key => "<+reference+>_id"+>, :dependent => :destroy<++>
-
-#mapc
 snippet mapc
 	${1:map}.${2:connect} '${3:controller/:action/:id}'
-
-#mrnc
 snippet mrnc
 	rename_column :${1:table}, :${2:old}, :${3:new}
-
-#rpo
 snippet rpo
 	render :partial => "<+item+>", :object => <+@<+item+>+>
-
-#rn
 snippet rn
 	render :nothing => ${1:true}
-
-#artnpp
 snippet artnpp
 	assert_redirected_to <+<+parent+>_<+child+>_path(<+@<+parent+>+>)+>
-
-#rfu
 snippet rfu
 	render :file => "${1:filepath}", :use_full_path => ${2:false}
-
-#artnp
 snippet artnp
 	assert_redirected_to <+<+parent+>_<+child+>_path(<+@<+parent+>+>, <+@<+child+>+>)+>
-
-#defupdate
 snippet defupdate
 	def update
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
@@ -124,180 +73,98 @@ snippet defupdate
 			end
 		end
 	end${3}
-
-#tcd
 snippet tcd
 	t.decimal :<+title+><+<+, :precision => <+10+>+><+, :scale => <+2+>+>+>
 	<++>
-
-#vao
 snippet vao
 	validates_acceptance_of :${1:terms}
-
-#rjson
 snippet rjson
 	render :json => ${1:text to render}
-
-#mp
 snippet mp
 	map(&:${1:id})
-
-#mapwo
 snippet mapwo
 	${1:map}.with_options :${2:controller} => '${3:thing}' do |$3|
 		${4}
 	end
-
-#hm
 snippet hm
 	has_many :${1:object}
-
-#asre
 snippet asre
 	assert_response :${1:success}, @response.body${2}
-
-#tcs
 snippet tcs
 	t.string :${1:title}
 	${2}
-
-#mct
 snippet mct
 	create_table :${1:table_name} do |t|
 		t.column :${2:name}, :${3:type}
 	end
-
-#tcts
 snippet tcts
 	t.timestamp :${1:title}
 	${2}
-
-#habtm
 snippet habtm
 	has_and_belongs_to_many :${1:object}, :join_table => "${2:table_name}", :foreign_key => "${3}_id"${4}
-
-#i18
 snippet i18
 	I18n.t('${1:type.key}')${2}
-
-#vf
 snippet vf
 	validates_format_of :${1:attribute}, :with => /${2:regex}/
-
-#nc
 snippet nc
 	named_scope :<+name+><+, :joins => :<+table+>+>, :conditions => <+['<+<+field+> = ?+>', <+true+>]+>
-
-#tcf
 snippet tcf
 	t.float :${1:title}
 	${2}
-
-#ncl
 snippet ncl
 	named_scope :<+name+>, lambda { |<+param+>| { :conditions => <+['<+<+field+> = ?+>', <+param+>]+> } }
-
-#rl
 snippet rl
 	render :layout => "${1:layoutname}"
-
-#crw
 snippet crw
 	cattr_accessor :${1:attr_names}
-
-#logd
 snippet logd
 	logger.debug { "${1:message}" }${2}
-
-#asrj
 snippet asrj
 	assert_rjs :<+replace+>, <+"<+dom id+>"+>
-
-#mrc
 snippet mrc
 	remove_column :${1:column}
-
-#ass
 snippet ass
 	assert_select '<+path+>'<+, :<+text+> => <+'<+inner_html+>'+>+> <+do<++>+>
-
-#tci
 snippet tci
 	t.integer :${1:title}
 	${2}
-
-#mcol
 snippet mcol
 	remove_column :${1:table}, :${2:column}
-
-#log
 snippet log
 	RAILS_DEFAULT_LOGGER.${1:debug} ${2}
-
-#rps
 snippet rps
 	render :partial => "${1:item}", :status => ${2:500}
-
-#asd
 snippet asd
 	assert_difference "${1:Model}.${2:count}", $1 do
 		${3}
 	end
-
-#rt
 snippet rt
 	render :text => "${1:text to render}"
-
-#loge
 snippet loge
 	logger.error { "${1:message}" }${2}
-
-#tcl
 snippet tcl
 	t.integer :lock_version, :null => false, :default => 0
 	${1}
-
-#mcc
 snippet mcc
 	change_column :${1:table}, :${2:column}, :${3:type}
-
-#mbs
 snippet mbs
 	before_save :${1:method}
-
-#rpl
 snippet rpl
 	render :partial => "<+item+>", :locals => { :<+item+> => <+@<+item+>+><++> }
-
-#mrmc
 snippet mrmc
 	remove_column :${1:table}, :${2:column}
-
-#vl
 snippet vl
 	validates_length_of :${1:attribute}, :within => ${2:3}..${3:20}
-
-#fini
 snippet fini
 	find(<+id+>)
-
-#maprs
 snippet maprs
 	${1:map}.resources :${2:resource}
-
-#rtl
 snippet rtl
 	render :text => "${1:text to render}", :layout => "${2:layoutname}"
-
-#rp
 snippet rp
 	render :partial => "${1:item}"
-
-#rtlt
 snippet rtlt
 	render :text => "${1:text to render}", :layout => ${2:true}
-
-#defdestroy
 snippet defdestroy
 	def destroy
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
@@ -308,35 +175,21 @@ snippet defdestroy
 			wants.xml  { head :ok }
 		end
 	end${3}
-
-#va
 snippet va
 	validates_associated :${1:attribute}
-
-#vu
 snippet vu
 	validates_uniqueness_of :${1:attribute}
-
-#rest
 snippet rest
 	respond_to do |wants|
 		wants.${1:html} <+{ <++> }+>
 	end
-
-#xput
 snippet xput
 	xhr :put, :${1:update}, :id => ${2:1}, :${3:object} => { ${4} }${5}
-
-#tcb
 snippet tcb
 	t.boolean :${1:title}
 	${2}
-
-#xget
 snippet xget
 	xhr :get, :<+show+><+, :id => <+1+>+><++>
-
-#migration
 snippet migration
 	class ${1:`Snippet_MigrationNameFromFilename()`} < ActiveRecord::Migration
 		def self.up
@@ -346,64 +199,36 @@ snippet migration
 		def self.down
 		end
 	end
-
-#tcbi
 snippet tcbi
 	t.binary :<+title+><+, :limit => <+2+>.megabytes+>
 	<++>
-
-#bt
 snippet bt
 	belongs_to :${1:association}
-
-#rit
 snippet rit
 	render :inline => "${1:<%= 'hello' %>}", :type => ${2::rxml}
-
-#logw
 snippet logw
 	logger.warn { "${1:message}" }${2}
-
-#ru
 snippet ru
 	render :update do |${1:page}|
 		$1.${2}
 	end
-
-#tre
 snippet tre
 	t.rename :<+old_column_name+>, :<+new_column_name+>
 	<++>
-
-#vn
 snippet vn
 	validates_numericality_of :${1:attribute}
-
-#sha1
 snippet sha1
 	Digest::SHA1.hexdigest(${1:string})
-
-#mac
 snippet mac
 	add_column :${1:table}, :${2:column}, :${3:type}
-
-#fina
-snippet fina
+snippet finda
 	find(:all<+, :conditions => ['<+<+field+> = ?+>', <+true+>]+>)
-
-#bf
 snippet bf
 	before_filter :${1:method}
-
-#mapca
 snippet mapca
 	${1:map}.catch_all "*${2:anything}", :controller => "${3:default}", :action => "${4:error}"${5}
-
-#ho
 snippet ho
 	has_one :${1:object}
-
-#defnew
 snippet defnew
 	def new
 		@${1:model_class_name} = ${2:ModelClassName}.new
@@ -413,100 +238,56 @@ snippet defnew
 			wants.xml  { render :xml => @$1 }
 		end
 	end${3}
-
-#mapr
 snippet mapr
 	${1:map}.resource :${2:resource}
-
-#tref
 snippet tref
 	t.references :${1:model}
-
-#finf
 snippet finf
 	find(:first<+, :conditions => ['<+<+field+> = ?+>', <+true+>]+>)
-
-#mccc
 snippet mccc
 	t.column :${1:title}, :${2:string}
-
-#rpc
 snippet rpc
 	render :partial => "<+item+>", :collection => <+@<+item+>s+>
-
-#tct
 snippet tct
 	t.text :${1:title}
 	${2}
-
-#logf
 snippet logf
 	logger.fatal { "${1:message}" }${2}
-
-#defedit
 snippet defedit
 	def edit
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
 	end
-
-#rns
 snippet rns
 	render :nothing => ${1:true}, :status => ${2:401}
-
-#tcdt
 snippet tcdt
 	t.datetime :${1:title}
 	${2}
-
-#xdelete
 snippet xdelete
 	xhr :delete, :${1:destroy}, :id => ${2:1}${3}
-
-#ve
 snippet ve
 	validates_exclusion_of :${1:attribute}, :in => ${2:%w( mov avi )}
-
-#logi
 snippet logi
 	logger.info { "${1:message}" }${2}
-
-#tcr
 snippet tcr
 	t.references :<+taggable+><+, :polymorphic => <+{ :default => '<+Photo+>' }+>+>
 	<++>
-
-#rts
 snippet rts
 	render :text => "${1:text to render}", :status => ${2:401}
-
-#ist
 snippet ist
 	<%= image_submit_tag("<+agree.png+>"<+<+, :id => "<+id+>"+><+, :name => "<+name+>"+><+, :class => "<+class+>"+><+, :disabled => <+false+>+>+>) %>
-
-#asnd
 snippet asnd
 	assert_no_difference "${1:Model}.${2:count}" do
 		${3}
 	end
-
-#trc
 snippet trc
 	t.remove :${1:column}
-
-#tcti
 snippet tcti
 	t.time :${1:title}
 	${2}
-
-#ral
 snippet ral
 	render :action => "${1:action}", :layout => "${2:layoutname}"
-
-#finl
 snippet finl
 	find(:last<+, :conditions => ['<+<+field+> = ?+>', <+true+>]+>)
-
-#defindex
 snippet defindex
 	def index
 		@${1:model_class_name} = ${2:ModelClassName}.all
@@ -516,8 +297,6 @@ snippet defindex
 			wants.xml  { render :xml => @$1s }
 		end
 	end${3}
-
-#defcreate
 snippet defcreate
 	def create
 		@${1:model_class_name} = ${2:ModelClassName}.new(params[:$1])
@@ -533,21 +312,13 @@ snippet defcreate
 			end
 		end
 	end${3}
-
-#pa
 snippet pa
 	params[:${1:id}]${2}
-
-#artp
 snippet artp
 	assert_redirected_to <+<+model+>_path(<+@<+model+>+>)+>
-
-#tcda
 snippet tcda
 	t.date :${1:title}
 	${2}
-
-#sweeper
 snippet sweeper
 	class ${1:ModelClassName}Sweeper < ActionController::Caching::Sweeper
 		observe $1
@@ -564,13 +335,8 @@ snippet sweeper
 			expire_page
 		end
 	end
-
-#tctss
 snippet tctss
 	t.timestamps
 	${1}
-
-#xpost
 snippet xpost
 	xhr :post, :${1:create}, :${2:object} => { ${3} }
-

@@ -1,36 +1,19 @@
-#try
 snippet try
 	try
 		${2}
 	catch /${1}/
 	endtry
-
-#if
-snippet if
-	if ${1}
-		${2}
-	endif
-
-#log
 snippet log
 	echomsg ${1}
-
-#com
 snippet com
 	command! -nargs=${1:number_of_args} ${2:other_params} ${2:name} ${2:command}
-
-#au
 snippet au
 	autocmd ${1:events} ${2:pattern} ${3:command}
-
-#ife
 snippet ife
 	if ${1}
 		${2}
 	else
 	endif
-
-#func
 snippet func
 	"Function: $1
 	"Desc: ${3:description}
@@ -40,4 +23,3 @@ snippet func
 	function! ${1:name}(${2})
 		${5}
 	endfunction
-

@@ -1,67 +1,37 @@
-#conf
 snippet conf
 	-content_for :${1:yield_label_in_layout} do
 	  ${2}
-	  
-
-#cs
 snippet cs
 	=collection_select :${1:object}, :${2:method}, :${3:collection}, :${4:value_method}, :${5:text_method} ${6:, [options]} ${7:, [html_options]}
-
-#ff
 snippet ff
 	-form_for @${1:model} do |f|
 	  ${2}
-
-#ffcb
 snippet ffcb
 	=f.check_box :${1:attribute}
-
-#ffe
 snippet ffe
 	=error_messages_for :${1:model}
 	
 	-form_for @${2:model} do |f|
 	  ${3}
-
-#ffff
 snippet ffff
 	=f.file_field :${1:attribute}
-
-#ffhf
 snippet ffhf
 	=f.hidden_field :${1:attribute}
-
-#ffl
 snippet ffl
 	=f.label :${1:attribute}
-
-#ffpf
 snippet ffpf
 	=f.password_field :${1:attribute}
-
-#ffrb
 snippet ffrb
 	=f.radio_button :${1:attribute}, :${2:tag_value}
-
-#ffs
 snippet ffs
 	=f.submit "<+Submit+>"<+, :disable_with => '<+Submitting+>'+>
-
-#ffta
 snippet ffta
 	=f.text_area :${1:attribute}
-
-#fftf
 snippet fftf
 	=f.text_field :${1:attribute}
-
-#fields
 snippet fields
 	-fields_for :${1:model}, @$1 do |${2:f}|
 	  ${3}
-
-#for
 snippet for
 	-if !${1:list}.blank?
 	  -for ${2:item} in $1
@@ -69,118 +39,65 @@ snippet for
 	-else
 	 ${4}
 	
-
-#ft
 snippet ft
 	-form_tag(<+:action => "<+update+>"+><+, {:<+class+> => "<+form+>"}+>) do
 	  <++>
-
-#if
 snippet if
 	-if ${1}
 	  ${2}
-
-#ife
 snippet ife
 	-if ${1}
 	  ${2}
 	-else
 	  
-
-#it
 snippet it
 	=image_tag "${1}"
-
-#jit
 snippet jit
 	=javascript_include_tag <+:all+><+, :cache => <+true+>+>
-
-#jsit
 snippet jsit
 	=javascript_include_tag "${1}"
-
-#lia
 snippet lia
 	=link_to "${1:link text}", :action => "${2:index}"
-
-#liai
 snippet liai
 	=link_to "<+link text+>", :action => "<+edit+>", :id => <+@<+item+>+>
-
-#lic
 snippet lic
 	=link_to "${1:link text}", :controller => "${2:items}"
-
-#lica
 snippet lica
 	=link_to "${1:link text}", :controller => "${2:items}", :action => "${3:index}"
-
-#licai
 snippet licai
 	=link_to "<+link text+>", :controller => "<+items+>", :action => "<+edit+>", :id => <+@<+item+>+>
-
-#lim
 snippet lim
 	=link_to <+model+>.<+name+>, <+<+model+>_path(<+model+>)+>
-
-#linp
 snippet linp
 	=link_to <+"<+link text+>"+>, <+<+parent+>_<+child+>_path(<+@+><+parent+>, <+@+><+child+>)+>
-
-#linpp
 snippet linpp
 	=link_to <+"<+link text+>"+>, <+<+parent+>_<+child+>_path(<+@+><+parent+>)+>
-
-#lip
 snippet lip
 	=link_to <+"<+link text+>"+>, <+<+model+>_path(<+@+><+instance+>)+>
-
-#lipp
 snippet lipp
 	=link_to <+"<+link text+>"+>, <+<+model+>s_path+>
-
-#lt
 snippet lt
 	=link_to "${1}", ${2:dest}
-
-#ofcfs
 snippet ofcfs
 	=options_from_collection_for_select <+collection+>, <+value_method+>, <+text_method+><+, <+[selected_value]+>+>
-
-#rf
 snippet rf
 	=render :file => "${1:file}"${2}
-
-#rp
 snippet rp
 	=render :partial => "${1:file}"${2}
-
-#rt
 snippet rt
 	=render :template => "${1:file}"${2}
-
-#slt
 snippet slt
 	=stylesheet_link_tag <+:all+><+, :cache => <+true+>+>
-
-#sslt
 snippet sslt
 	=stylesheet_link_tag "${1}"
-
-#st
 snippet st
 	=submit_tag "<+Save changes+>"<+, :id => "<+submit+>"+><+, :name => "<+submit+>"+><+, :class => "<+form_name+>"+><+, :disabled => <+false+>+><+, :disable_with => "<+Please wait+>"+>
-
-#unless
 snippet unless
 	-unless ${1}
 	  ${2}
 	
-
-#unlesse
 snippet unlesse
 	-if ${1}
 	  ${2}
 	-else
 	  
-

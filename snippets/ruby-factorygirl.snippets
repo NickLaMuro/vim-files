@@ -1,26 +1,16 @@
-#facb
 snippet facb
 	Factory.build(:${1}, ${2})${3}
-
-#fac
 snippet fac
 	Factory(:${1}, ${2})${3}
-
-#facn
 snippet facn
 	Factory.next(:${1:sequence-name})${2}
-
-#facd
 snippet facd
 	Factory.define(:${1:model}) do |${2:f}|
 		${3}
 	end
 	${4}
-
-#facs
 snippet facs
 	Factory.sequence :${1:sequence-name} do |${2:m}|
 		${3}
 	end
 	${4}
-
