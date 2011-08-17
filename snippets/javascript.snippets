@@ -1,0 +1,47 @@
+#met
+snippet met
+	${1:method_name}: function(${2:attribute}){
+	  ${3}
+	}${4:, }
+
+#anon
+snippet anon
+	function(${1}) { ${2} };
+
+#if
+snippet if
+	if (${1:true}) { ${2} };
+
+#proto
+snippet proto
+	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
+		${4:// body}
+	};
+
+#log
+snippet log
+	console.log(${1});
+
+#fun
+snippet fun
+	function ${1:function_name} (${2:argument}) {
+		${3:// body}
+	}
+
+#timeout
+snippet timeout
+	setTimeout(function() { ${1} }, ${2:10});
+
+#ife
+snippet ife
+	if (${1:true}) {
+		${2}
+	} else {
+	};
+
+#for
+snippet for
+	for (var <+i+>=0; <+i+> < <+<+Things+>.length+>; <+i+>++) {
+	<+<+Things+>[<+i+>]+>
+	};
+

@@ -1,0 +1,309 @@
+#sort
+snippet sort
+	sort { |${1:x},${2:y}| ${3:body} }
+
+#ip
+snippet ip
+	ip_addr = request.env['REMOTE_ADDR']
+
+#xmlr
+snippet xmlr
+	REXML::Document.new(File.read(${1:path}))
+
+#fileeach
+snippet fileeach
+	File.foreach(${1:"<+path}"+>) { |${2:line}| ${3} }
+
+#asi
+snippet asi
+	assert_include ${1:collection}, ${2:object}
+
+#class
+snippet class
+	class ${1:`Snippet_RubyClassNameFromFilename()`}${2}
+		${3}
+	end
+
+#defi
+snippet defi
+	def initialize${1}
+		${2}
+	end
+
+#asf
+snippet asf
+	assert_false ${1:actual}
+
+#pathhere
+snippet pathhere
+	File.join(File.dirname(__FILE__), *%w[${1:rel_path_here}])
+
+#each_with_indexo
+snippet each_with_indexo
+	each_with_index do |${1:element},${2:i}|
+		${3:body}
+	end
+	
+#bm
+snippet bm
+	TESTS = ${1:10_000}
+	Benchmark.bmbm do |results|
+		${2}
+	end
+
+#asnse
+snippet asnse
+	assert_not_send ${1:send_array}
+
+#ascd
+snippet ascd
+	assert_const_defined ${1:object}, ${2:constant_name}
+
+#unlesse
+snippet unlesse
+	unless ${1:condition}
+		${2}
+	else
+	end
+
+#detecto
+snippet detecto
+	detect do |${1:element}|
+		${2:body}
+	end
+
+#rejecto
+snippet rejecto
+	reject do |${1:element}|
+		${2:body}
+	end
+
+#select
+snippet select
+	select { |${1:element}| ${2:body} }
+
+#astr
+snippet astr
+	assert_true ${1:actual}
+
+#mapo
+snippet mapo
+	map do |${1:element}|
+		${2:body}
+	end
+
+#asb
+snippet asb
+	assert_boolean ${1:actual}
+
+#dop
+snippet dop
+	do |${1:param}|
+		${2}
+	end
+
+#asam
+snippet asam
+	assert_alias_method ${1:object}, ${2:alias_name}, ${3:original_name}
+
+#detect
+snippet detect
+	detect { |${1:element}| ${2:body} }
+
+#injecto
+snippet injecto
+	inject do |${1:total},${2:next}|
+		${3:body}
+	end
+
+#asnem
+snippet asnem
+	assert_not_empty ${1:object}
+
+#sorto
+snippet sorto
+	sort do |${1:x},${2:y}|
+		${3:body}
+	end
+
+#mod
+snippet mod
+	module ${1:`Snippet_RubyClassNameFromFilename()`}
+		${2}
+	end
+
+#asncd
+snippet asncd
+	assert_not_const_defined ${1:object}, ${2:constant_name}
+
+#mapdo
+snippet mapdo
+	map do |${1:element}|
+		${2:body}
+	end
+
+#task
+snippet task
+	desc "${1:Task description}"
+	task :${2:task_name}${3: => [:dependent, :tasks]} do
+		${4}
+	end
+
+#classe
+snippet classe
+	class ${1:ErrorClassName} < ${2:StandardError}; end${3}
+
+#each_with_index
+snippet each_with_index
+	each_with_index { |${1:element},${2:i}| ${3:} }
+
+#aspe
+snippet aspe
+	assert_path_exist ${1:path}
+
+#http_get
+snippet http_get
+	require 'net/http'
+	res = Net::HTTP.get URI.parse('${1:url}')
+
+#asse
+snippet asse
+	assert_send ${1:send_array}
+
+#asnrt
+snippet asnrt
+	assert_not_respond_to ${1:object}, ${2:method}
+
+#http_post
+snippet http_post
+	require 'net/http'
+	res = Net::HTTP.post_form URI.parse('${1:url}')${2:, params}
+
+#Yl
+snippet Yl
+	File.open(${1:path_to_yml}) { |${2:file}| YAML.load(${3:$2}) }
+
+#asnie
+snippet asnie
+	assert_not_in_epsilon ${1:expected_float}, ${2:actual_float}
+
+#Yd
+snippet Yd
+	File.open(${1:path_to_yml}, "w") { |${2:file}| YAML.dump(${3:obj}, ${4:$2}) }
+
+#reject
+snippet reject
+	reject { |${1:element}| ${2:body} }
+
+#each
+snippet each
+	each { |${1:element}| ${2:body} }
+
+#asrm
+snippet asrm
+	assert_raise_message ${1:expected_message}
+
+#asfa
+snippet asfa
+	assert_fail_assertion { ${1:block} }
+
+#eacho
+snippet eacho
+	each do |${1:element}|
+		${2:body}
+	end
+
+#asp
+snippet asp
+	assert_predicate ${1:object}, ${2:predicate}
+
+#asie
+snippet asie
+	assert_in_epsilon ${1:expected_float}, ${2:actual_float}
+
+#fopen
+snippet fopen
+	File.open(${1:path}, "${2:rwab}") { |${3:file}| ${4} }
+
+#eawido
+snippet eawido
+	each_with_index do |${1:element},${2:i}|
+		${3:body}
+	end
+	
+
+#asnp
+snippet asnp
+	assert_not_predicate ${1:object}, ${2:predicate}
+
+#eado
+snippet eado
+	each do |${1:element}|
+		${2:body}
+	end
+
+#module
+snippet module
+	module ${1:`Snippet_RubyClassNameFromFilename()`}
+		module ClassMethods
+			${2}
+		end
+	
+		module InstanceMethods
+	
+		end
+	
+		def self.included(receiver)
+			receiver.extend         ClassMethods
+			receiver.send :include, InstanceMethods
+		end
+	end
+
+#asrko
+snippet asrko
+	assert_raise_kind_of(${1:kinds...}) { ${2:block} }
+
+#asem
+snippet asem
+	assert_empty ${1:object}
+
+#asnid
+snippet asnid
+	assert_not_in_delta ${1:expected_float}, ${2:actual_float}
+
+#selecto
+snippet selecto
+	select do |${1:element}|
+		${2:body}
+	end
+
+#aspne
+snippet aspne
+	assert_path_not_exist ${1:path}
+
+#fread
+snippet fread
+	File.read(${1})
+
+#asni
+snippet asni
+	assert_not_include ${1:collection}, ${2:object}
+
+#asc
+snippet asc
+	assert_compare ${1:expected}, ${2:operator}, ${3:actual}
+
+#dglob
+snippet dglob
+	Dir.glob(${1:"<+dir}"+>) { |${2:file}| ${3} }
+
+#inject
+snippet inject
+	inject { |${1:total},${2:next}| ${3:body} }
+
+#injdo
+snippet injdo
+	inject(${1:init}) do |${2:total}, ${3:next}|
+		${4:body}
+	end
+

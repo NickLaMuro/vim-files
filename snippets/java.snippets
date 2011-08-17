@@ -1,0 +1,109 @@
+#if
+snippet if
+	if(${1}){
+		${2}
+	}
+
+#log
+snippet log
+	System.${1:out}.println(${2});
+
+#ife
+snippet ife
+	if(${1}){
+		${2}
+	}else{
+	}
+
+
+#class
+----------
+
+#class.basic+constructor
+snippet class basic+constructor
+	/**
+	 * class $2
+	 * @author ${4:`g:snips_author`}
+	 */
+	${1:public} class ${2:`Snippet_JavaClassNameFromFilename()`}${3} {
+	
+		/**
+		  * Constructor for $2
+		  */
+		public $2(${5}){
+			${6}
+		}
+	
+	}
+
+
+#class.basic
+snippet class basic
+	/**
+	 * class $2
+	 * @author ${4:`g:snips_author`}
+	 */
+	${1:public} class ${2:`Snippet_JavaClassNameFromFilename()`}${3} {
+	
+		/**
+		  * Constructor for $2
+		  */
+		public $2(${5}){
+			${6}
+		}
+	
+	}
+
+
+#class.basic+constructor+main
+snippet class basic+constructor+main
+	/**
+	 * class $2
+	 * @author ${4:`g:snips_author`}
+	 */
+	${1:public} class ${2:`Snippet_JavaClassNameFromFilename()`}${3} {
+	
+		/**
+		  * Constructor for $2
+		  */
+		public $2(${4}) {
+			${5}
+		}
+	
+		public static void main(String args[]) {
+		}
+	
+	}
+
+
+----------
+
+#for
+snippet for
+	for(${1:int i=0}; ${2:condition}; ${3:i++}){
+		${4}
+	}
+
+#m
+snippet m
+	/**
+	 * ${7:Method Description}
+	 * ${5}
+	 * @return ${6}
+	 */
+	${1:public} ${2:void} ${3:methodName}(${4}) {
+		${8}
+	}
+
+#gs
+snippet gs
+	//getter for $3
+	public ${2:variable_type} get${1:VariableName}() {
+	    return ${3:variableName};
+	}
+	
+	//setter for $3
+	public void set$1($2 $3) {
+	   this.$3 = $3;
+	}${4}
+

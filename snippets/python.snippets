@@ -1,0 +1,53 @@
+#class
+snippet class
+	class ${1:``Snippet_PythonClassNameFromFilename()``}(${2:data}):
+	${3}
+
+#ifmain
+snippet ifmain
+	if __name__ == '__main__':
+	${1}
+
+#def
+snippet def
+	def ${1:name}(${2:data}):
+	${3}
+
+#init
+snippet init
+	def __init__(self, ${1:args}):
+	${2}
+
+#try
+snippet try
+	try:
+	${1}
+	except ${2:Exception}
+	${3}
+
+#get
+snippet get
+	def get_${1:name}(self):
+	return self._$1
+	${2}
+
+#import
+snippet import
+	import ${1:module}
+	${2}
+
+#for
+snippet for
+	for ${1:var} in ${2:type}:
+	${3:pass}
+	${4}
+
+#set
+snippet set
+	def set_${1:name}(self, ${2:value}):
+
+#from
+snippet from
+	from ${1:module} import ${2:name}
+	${3}
+

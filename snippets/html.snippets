@@ -1,0 +1,115 @@
+#t
+snippet t
+	<${1:div}${2}>
+		${3}
+	</$1>${4}
+
+#inputl
+snippet inputl
+	<label for="${1:input_id}">${2}</label>
+	<input type="${3:text/submit/hidden/button}" name="${4:$1}" value="${5:value}" id="${6:$1}"/>${7}
+
+#href
+snippet href
+	<a href="${1}">${2}</a>
+
+
+#table
+----------
+
+#table.hardcore
+snippet table hardcore
+	<table<+ width="<+100%+>" border="<+0+>" cellspacing="<+0+>" cellpadding="<+5+>"<++>+>>
+		<tr>
+			<th><++></th>
+		</tr>
+	
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+
+
+#table.basic
+snippet table basic
+	<table class="${1}">
+		${2}
+	</table>
+
+
+#----------
+
+#img
+snippet img
+	<img src="${1}"${2} />
+
+#doctype
+snippet doctype
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">${1}
+
+
+#skel
+----------
+
+#skel.basic
+snippet skel basic
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+	Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>${1:Page Title}</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		</head>
+	
+		<body>
+			${2}
+		</body>
+	</html>
+
+
+#skel.basic_with_meta
+snippet skel basic_with_meta
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+	Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>${1:Page Title}</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<meta name="keywords" content=""/>
+			<meta name="description" content=""/>
+		</head>
+	
+		<body>
+			${2}
+		</body>
+	</html>
+
+
+#----------
+
+#ifie
+snippet ifie
+	<!--[if IE ${1:6}]>${2}<![endif]-->${3}
+
+
+#script
+----------
+
+#script.include_script
+snippet script include_script
+	<script src="${1:url}" type="text/javascript" charset="utf-8"></script>${2}
+
+
+#script.inline_script
+snippet script inline_script
+	<script type="text/javascript" language="javascript" charset="utf-8">
+	//<![CDATA[
+		${1}
+	//]]>
+	</script>
+
+
+#----------
+
