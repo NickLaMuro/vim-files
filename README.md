@@ -29,6 +29,15 @@ screem makes it hard to see.
 ubuntu plus tmux screws them up), so I will probably upload some other versions
 that work well for terminal vim.
 
+**EDIT** There is a fix if you are having trouble with tmux.  Add the following
+to your .bashrc:
+
+```
+  [ -n "TMUX" ] && export TERM="screen-256color"
+```
+
+and this should fix the issue for you.
+
 Snippets for SnipMate
 ---------------------
 
