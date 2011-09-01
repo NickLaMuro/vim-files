@@ -32,7 +32,7 @@ that work well for terminal vim.
 **EDIT** There is a fix if you are having trouble with tmux.  Add the following
 to your .bashrc:
 
-```
+```bash
   [ -n "TMUX" ] && export TERM="screen-256color"
 ```
 
