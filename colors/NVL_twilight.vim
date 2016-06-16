@@ -236,6 +236,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 " ----------------------------------------------------------------------------------- "
 
+		call <SID>X("DiffAdd", "000000", "8fCd6a", "")
+		call <SID>X("DiffAdd", "000000", "8F9D6A", "")
+		call <SID>X("DiffDelete", "000000", "CF6A4C", "")  
+		call <SID>X("DiffChange", "000000", "9FCD9A", "")  
+		call <SID>X("DiffChange", "000000", "DDFFDD", "")  
+		call <SID>X("DiffChange", "000000", "AAFFAA", "")  
+		call <SID>X("DiffText", "000000", "EEa0a0", "")  
+		call <SID>X("DiffText", "000000", "FFAAAA", "")  
+
 		call <SID>X("Cursor", "708090", "f0e68c", "")  
 		call <SID>X("Visual", "", "4b4b4b", "") 
 		call <SID>X("CursorLine", "", "2b2b2b", "NONE")
