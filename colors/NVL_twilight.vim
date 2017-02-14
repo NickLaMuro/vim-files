@@ -245,6 +245,18 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		call <SID>X("DiffText", "000000", "EEa0a0", "")  
 		call <SID>X("DiffText", "000000", "FFAAAA", "")  
 
+		call <SID>X("diffAdded",   "00C200", "", "")
+		call <SID>X("diffRemoved", "C91B00", "", "")
+		call <SID>X("diffLine",    "00C5C7", "", "")
+		" call <SID>X("diffSubname", "00C5C7", "", "")
+		" hi def link diffSubname diffLine
+		hi def link diffFile    Identifier
+		" call <SID>X("diffFile", "C7C7C7", "", "")
+		call <SID>X("gitDiff", "C7C7C7", "", "")
+		" call <SID>X("gitcommitDiff", "C7C7C7", "", "")
+		hi def link gitcommitDiff gitDiff
+		hi def link diffSubname   gitDiff
+
 		call <SID>X("Cursor", "708090", "f0e68c", "")  
 		call <SID>X("Visual", "", "4b4b4b", "") 
 		call <SID>X("CursorLine", "", "2b2b2b", "NONE")
