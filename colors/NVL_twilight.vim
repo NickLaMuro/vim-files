@@ -262,6 +262,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		call <SID>X("CursorLine", "", "2b2b2b", "NONE")
 		call <SID>X("CursorColumn", "", "2b2b2b", "")  
 		call <SID>X("LineNr", "CCCCCC", "3b3b3b", "") 
+		call <SID>X("CursorLineNr", "", "", "None") 
 
 		call <SID>X("VertSplit", "303030", "303030", "") 
 
