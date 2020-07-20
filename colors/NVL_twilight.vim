@@ -316,6 +316,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     call <SID>X("GenericColorClear", "", "", "")
     call <SID>X("GenericConstant", "9B859D", "", "")
+    call <SID>X("GenericDefinition", "CF694B", "", "")
     call <SID>X("GenericFrameworkFunction", "DAD085", "", "")
     call <SID>X("GenericInstanceVariable", "7587A6", "", "")
     call <SID>X("GenericInterpolation", "DAEFA3", "", "")
@@ -330,19 +331,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     " The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
     call <SID>X("javaScriptParen", "ffffff", "", "")
-
-    call <SID>X("cssURL", "7587a6", "", "")
-    call <SID>X("cssFunctionName", "dad085", "", "")
-    call <SID>X("cssDefinition", "cf694b", "", "")
-
-    call <SID>X("cssColor", "ca773f", "", "")
-    call <SID>X("cssPseudoClassId", "9b703f", "", "")
-
-    call <SID>X("cssClassName", "9b703f", "", "")
-    call <SID>X("cssValueLength", "cf6a4c", "", "")
-
-    call <SID>X("cssCommonAttr", "cf6a4c", "", "")
-    call <SID>X("cssBraces", "", "", "")
 
     call <SID>X("cInclude", "afc3db", "", "")
     call <SID>X("cType", "f9ed97", "", "")
