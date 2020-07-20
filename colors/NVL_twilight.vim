@@ -324,6 +324,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("GenericInterpolation", "DAEFA3", "", "")
     call <SID>X("GenericRegexp", "E9C062", "", "")
 
+    call <SID>X("HighlightedBlock", "", "000000", "")
 
     call <SID>X("javaScriptFunction", "f9ee98", "", "")
     call <SID>X("javaScriptBraces", "ffffff", "", "")
@@ -333,18 +334,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     " The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
     call <SID>X("javaScriptParen", "ffffff", "", "")
-
-    hi def link markdownH1                    Function
-    hi def link markdownH2                    Function
-    hi def link markdownH3                    Function
-    hi def link markdownH4                    Function
-    hi def link markdownH5                    Function
-    hi def link markdownH6                    Function
-    hi def link markdownHeadingDelimiter      markdownHeadingRule
-
-    call <SID>X("markdownCode", "", "2b2b2b", "")
-    call <SID>X("markdownCodeBackgroundColor", "", "2b2b2b", "")
-    call <SID>X("HighlightedBlock", "", "000000", "")
 " ----------------------------------------------------------------------------------- "
 
     " delete functions {{{
