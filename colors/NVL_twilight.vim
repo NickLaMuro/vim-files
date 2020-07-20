@@ -313,9 +313,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Todo", "5f5a60", "", "inverse,bold,italic")
     call <SID>X("Type", "9b703f", "", "")
     call <SID>X("Underlined", "", "", "underline")
-    call <SID>X("erubyExpression", "", "", "")
 
+    call <SID>X("GenericColorClear", "", "", "")
     call <SID>X("GenericConstant", "9B859D", "", "")
+    call <SID>X("GenericFrameworkFunction", "DAD085", "", "")
     call <SID>X("GenericInstanceVariable", "7587A6", "", "")
     call <SID>X("GenericInterpolation", "DAEFA3", "", "")
     call <SID>X("GenericRegexp", "E9C062", "", "")
@@ -329,10 +330,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("rubyRailsRenderMethod", "dad085", "", "")
 
     call <SID>X("rubyRailsMethod", "dad085", "", "")
-
-    call <SID>X("erubyDelimiter", "ffffff", "", "")
-    call <SID>X("erubyComment", "5e5960", "", "")
-    call <SID>X("erubyRailsMethod", "dad085", "", "")
 
     call <SID>X("htmlTag", "ac885b", "", "")
     call <SID>X("htmlTagN", "ffffff", "", "")
