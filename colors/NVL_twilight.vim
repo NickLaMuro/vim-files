@@ -321,16 +321,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("GenericInterpolation", "DAEFA3", "", "")
     call <SID>X("GenericRegexp", "E9C062", "", "")
 
-    call <SID>X("rubyRailsUserClass", "9b859d", "", "")
-
-    call <SID>X("rubyRailsARAssociationMethod", "dad085", "", "")
-
-    call <SID>X("rubyRailsARMethod", "dad085", "", "")
-
-    call <SID>X("rubyRailsRenderMethod", "dad085", "", "")
-
-    call <SID>X("rubyRailsMethod", "dad085", "", "")
-
     call <SID>X("htmlTag", "ac885b", "", "")
     call <SID>X("htmlTagN", "ffffff", "", "")
     call <SID>X("htmlEndTag", "ac885b", "", "")
@@ -339,9 +329,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("htmlSpecialChar", "cf6a4c", "", "")
 
     call <SID>X("javaScriptFunction", "f9ee98", "", "")
-
-    call <SID>X("javaScriptRailsFunction", "dad085", "", "")
-
     call <SID>X("javaScriptBraces", "ffffff", "", "")
     call <SID>X("javaScriptMember", "9a859c", "", "")
     call <SID>X("javaScriptNumber", "cf694b", "", "")
