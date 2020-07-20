@@ -317,7 +317,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("GenericColorClear", "", "", "")
     call <SID>X("GenericConstant", "9B859D", "", "")
     call <SID>X("GenericDefinition", "CF694B", "", "")
+    call <SID>X("GenericCType", "F9ED97", "", "")
     call <SID>X("GenericFrameworkFunction", "DAD085", "", "")
+    call <SID>X("GenericInclude", "AFC3DB", "", "")
     call <SID>X("GenericInstanceVariable", "7587A6", "", "")
     call <SID>X("GenericInterpolation", "DAEFA3", "", "")
     call <SID>X("GenericRegexp", "E9C062", "", "")
@@ -331,11 +333,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     " The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
     call <SID>X("javaScriptParen", "ffffff", "", "")
-
-    call <SID>X("cInclude", "afc3db", "", "")
-    call <SID>X("cType", "f9ed97", "", "")
-    call <SID>X("cSpecial", "daefa3", "", "")
-    call <SID>X("cppStructure", "f9ed97", "", "")
 
     hi def link markdownH1                    Function
     hi def link markdownH2                    Function
