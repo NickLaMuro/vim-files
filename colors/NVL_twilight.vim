@@ -321,12 +321,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("GenericInterpolation", "DAEFA3", "", "")
     call <SID>X("GenericRegexp", "E9C062", "", "")
 
-    call <SID>X("htmlTag", "ac885b", "", "")
-    call <SID>X("htmlTagN", "ffffff", "", "")
-    call <SID>X("htmlEndTag", "ac885b", "", "")
-    call <SID>X("htmlTagName", "ac885b", "", "")
-    call <SID>X("htmlArg", "ac885b", "", "")
-    call <SID>X("htmlSpecialChar", "cf6a4c", "", "")
 
     call <SID>X("javaScriptFunction", "f9ee98", "", "")
     call <SID>X("javaScriptBraces", "ffffff", "", "")
