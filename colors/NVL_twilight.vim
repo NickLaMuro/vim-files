@@ -314,36 +314,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Type", "9b703f", "", "")
     call <SID>X("Underlined", "", "", "underline")
     call <SID>X("erubyExpression", "", "", "")
-    call <SID>X("rubyClass", "cda869", "", "")
-    call <SID>X("rubyFunction", "9b703f", "", "")
-    call <SID>X("rubyInterpolation", "DAEFA3", "", "")
-    call <SID>X("rubyInterpolationDelimiter", "DAEFA3", "", "")
-    call <SID>X("rubySymbol", "cf6a4c", "", "")
-    call <SID>X("rubyConstant", "9b859d", "", "")
-    call <SID>X("rubyStringDelimiter", "8f9d6a", "", "")
 
-    call <SID>X("rubyBlockParameter", "7587a6", "", "")
-
-    call <SID>X("rubyInstanceVariable", "7587a6", "", "")
-
-    call <SID>X("rubyInclude", "cda869", "", "")
-    call <SID>X("rubyGlobalVariable", "7587a6", "", "")
-
-    call <SID>X("rubyRegexp", "e9c062", "", "")
-    call <SID>X("rubyRegexpDelimiter", "e9c062", "", "")
-    call <SID>X("rubyRegexpSpecial", "e9c062", "", "")
-    call <SID>X("rubyRegexpAnchor", "9B703F", "", "")
-    call <SID>X("rubyRegexpCharClass", "9B703F", "", "")
-    call <SID>X("rubyRegexpQuantifier", "9B703F", "", "")
-    call <SID>X("rubyRegexpEscape", "9B703F", "", "")
-
-    call <SID>X("rubyEscape", "cf6a4c", "", "")
-    call <SID>X("rubyControl", "cda869", "", "")
-    call <SID>X("rubyClassVariable", "7587a6", "", "")
-
-    call <SID>X("rubyOperator", "cda869", "", "")
-    call <SID>X("rubyException", "cda869", "", "")
-    call <SID>X("rubyPseudoVariable", "7587a6", "", "")
+    call <SID>X("GenericConstant", "9B859D", "", "")
+    call <SID>X("GenericInstanceVariable", "7587A6", "", "")
+    call <SID>X("GenericInterpolation", "DAEFA3", "", "")
+    call <SID>X("GenericRegexp", "E9C062", "", "")
 
     call <SID>X("rubyRailsUserClass", "9b859d", "", "")
 
