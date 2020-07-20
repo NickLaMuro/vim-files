@@ -331,12 +331,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
     call <SID>X("javaScriptParen", "ffffff", "", "")
 
-
-    call <SID>X("yamlKey", "9b703f", "", "")
-    call <SID>X("yamlAnchor", "7587a6", "", "")
-    call <SID>X("yamlAlias", "7587a6", "", "")
-    call <SID>X("yamlDocumentHeader", "8f9d6a", "", "")
-
     call <SID>X("cssURL", "7587a6", "", "")
     call <SID>X("cssFunctionName", "dad085", "", "")
     call <SID>X("cssDefinition", "cf694b", "", "")
