@@ -9,7 +9,7 @@
 "
 " The functions in this theme that convert hex color codes to the nearest
 " xterm-256 color number are from the theme desert2 (desert256), developed by
-" Henry So, Jr. 
+" Henry So, Jr.
 "
 " The colors of this theme are based on the TextMate Twilight theme
 
@@ -236,171 +236,171 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 " ----------------------------------------------------------------------------------- "
 
-		call <SID>X("DiffAdd", "000000", "8fCd6a", "")
-		call <SID>X("DiffAdd", "000000", "8F9D6A", "")
-		call <SID>X("DiffDelete", "000000", "CF6A4C", "")  
-		call <SID>X("DiffChange", "000000", "9FCD9A", "")  
-		call <SID>X("DiffChange", "000000", "DDFFDD", "")  
-		call <SID>X("DiffChange", "000000", "AAFFAA", "")  
-		call <SID>X("DiffText", "000000", "EEa0a0", "")  
-		call <SID>X("DiffText", "000000", "FFAAAA", "")  
+    call <SID>X("DiffAdd", "000000", "8fCd6a", "")
+    call <SID>X("DiffAdd", "000000", "8F9D6A", "")
+    call <SID>X("DiffDelete", "000000", "CF6A4C", "")
+    call <SID>X("DiffChange", "000000", "9FCD9A", "")
+    call <SID>X("DiffChange", "000000", "DDFFDD", "")
+    call <SID>X("DiffChange", "000000", "AAFFAA", "")
+    call <SID>X("DiffText", "000000", "EEa0a0", "")
+    call <SID>X("DiffText", "000000", "FFAAAA", "")
 
-		call <SID>X("diffAdded",   "00C200", "", "")
-		call <SID>X("diffRemoved", "C91B00", "", "")
-		call <SID>X("diffLine",    "00C5C7", "", "")
-		" call <SID>X("diffSubname", "00C5C7", "", "")
-		" hi def link diffSubname diffLine
-		hi def link diffFile    Identifier
-		" call <SID>X("diffFile", "C7C7C7", "", "")
-		call <SID>X("gitDiff", "C7C7C7", "", "")
-		" call <SID>X("gitcommitDiff", "C7C7C7", "", "")
-		hi def link gitcommitDiff gitDiff
-		hi def link diffSubname   gitDiff
+    call <SID>X("diffAdded",   "00C200", "", "")
+    call <SID>X("diffRemoved", "C91B00", "", "")
+    call <SID>X("diffLine",    "00C5C7", "", "")
+    " call <SID>X("diffSubname", "00C5C7", "", "")
+    " hi def link diffSubname diffLine
+    hi def link diffFile    Identifier
+    " call <SID>X("diffFile", "C7C7C7", "", "")
+    call <SID>X("gitDiff", "C7C7C7", "", "")
+    " call <SID>X("gitcommitDiff", "C7C7C7", "", "")
+    hi def link gitcommitDiff gitDiff
+    hi def link diffSubname   gitDiff
 
-		call <SID>X("Cursor", "708090", "f0e68c", "")  
-		call <SID>X("Visual", "", "4b4b4b", "") 
-		call <SID>X("CursorLine", "", "2b2b2b", "NONE")
-		call <SID>X("CursorColumn", "", "2b2b2b", "")  
-		call <SID>X("LineNr", "CCCCCC", "3b3b3b", "") 
-		call <SID>X("CursorLineNr", "", "", "None") 
+    call <SID>X("Cursor", "708090", "f0e68c", "")
+    call <SID>X("Visual", "", "4b4b4b", "")
+    call <SID>X("CursorLine", "", "2b2b2b", "NONE")
+    call <SID>X("CursorColumn", "", "2b2b2b", "")
+    call <SID>X("LineNr", "CCCCCC", "3b3b3b", "")
+    call <SID>X("CursorLineNr", "", "", "None")
 
-		call <SID>X("VertSplit", "303030", "303030", "") 
+    call <SID>X("VertSplit", "303030", "303030", "")
 
-		call <SID>X("MatchParen", "cda869", "", "")  
-		call <SID>X("StatusLine", "303030", "fffedc", "")
-		call <SID>X("StatusLineNC", "303030", "605958", "")
+    call <SID>X("MatchParen", "cda869", "", "")
+    call <SID>X("StatusLine", "303030", "fffedc", "")
+    call <SID>X("StatusLineNC", "303030", "605958", "")
 
-		call <SID>X("TabLine", "f8f8f8", "3f3f3f", "NONE") 
+    call <SID>X("TabLine", "f8f8f8", "3f3f3f", "NONE")
 
-		call <SID>X("TabLineFill", "3f3f3f", "f8f8f8", "")
+    call <SID>X("TabLineFill", "3f3f3f", "f8f8f8", "")
 
-		call <SID>X("TabLineSel", "f8f8f8", "6f6f6f", "")
-		call <SID>X("Pmenu", "9b703f", "", "")  
-		call <SID>X("PmenuSel", "", "3c4043", "")  
-		"call <SID>X("IncSearch", "", "343a44", "")  
-		"call <SID>X("Search", "", "343a44", "")  
-		call <SID>X("Directory", "cf6a4c", "", "")  
-		call <SID>X("Folded", "5f5a60", "141414", "") 
+    call <SID>X("TabLineSel", "f8f8f8", "6f6f6f", "")
+    call <SID>X("Pmenu", "9b703f", "", "")
+    call <SID>X("PmenuSel", "", "3c4043", "")
+    "call <SID>X("IncSearch", "", "343a44", "")
+    "call <SID>X("Search", "", "343a44", "")
+    call <SID>X("Directory", "cf6a4c", "", "")
+    call <SID>X("Folded", "5f5a60", "141414", "")
 
     call <SID>X("Normal", "ffffff", "181818", "")
 
-		call <SID>X("Boolean", "cf6a4c", "", "")  
-		call <SID>X("Character", "cf6a4c", "", "")  
-		call <SID>X("Comment", "5e5960", "", "")
-		call <SID>X("Conditional", "cda869", "", "")  
-		call <SID>X("Constant", "cf6a4c", "", "")  
-		call <SID>X("Define", "cda869", "", "")  
-		call <SID>X("ErrorMsg", "", "", "")  
-		call <SID>X("WarningMsg", "", "", "")  
-		call <SID>X("Float", "cf6a4c", "", "")  
-		call <SID>X("Function", "9b703f", "", "")  
-		call <SID>X("Identifier", "f9ee98", "", "")  
-		call <SID>X("Keyword", "cda869", "", "")  
-		call <SID>X("Label", "8f9d6a", "", "")  
-		call <SID>X("NonText", "605958", "", "") 
+    call <SID>X("Boolean", "cf6a4c", "", "")
+    call <SID>X("Character", "cf6a4c", "", "")
+    call <SID>X("Comment", "5e5960", "", "")
+    call <SID>X("Conditional", "cda869", "", "")
+    call <SID>X("Constant", "cf6a4c", "", "")
+    call <SID>X("Define", "cda869", "", "")
+    call <SID>X("ErrorMsg", "", "", "")
+    call <SID>X("WarningMsg", "", "", "")
+    call <SID>X("Float", "cf6a4c", "", "")
+    call <SID>X("Function", "9b703f", "", "")
+    call <SID>X("Identifier", "f9ee98", "", "")
+    call <SID>X("Keyword", "cda869", "", "")
+    call <SID>X("Label", "8f9d6a", "", "")
+    call <SID>X("NonText", "605958", "", "")
 
-		call <SID>X("Number", "cf6a4c", "", "")  
-		call <SID>X("Operator", "cda869", "", "")  
-		call <SID>X("PreProc", "cda869", "", "")  
-		call <SID>X("Special", "f8f8f8", "", "")  
-		call <SID>X("SpecialKey", "4f4f4f", "1b1b1b", "")
+    call <SID>X("Number", "cf6a4c", "", "")
+    call <SID>X("Operator", "cda869", "", "")
+    call <SID>X("PreProc", "cda869", "", "")
+    call <SID>X("Special", "f8f8f8", "", "")
+    call <SID>X("SpecialKey", "4f4f4f", "1b1b1b", "")
 
-		call <SID>X("Statement", "cda869", "", "")  
-		call <SID>X("StorageClass", "f9ee98", "", "")  
-		call <SID>X("String", "8f9d6a", "", "")  
-		call <SID>X("Tag", "9b703f", "", "")  
-		call <SID>X("Title", "f8f8f8", "", "bold")
-		call <SID>X("Todo", "5f5a60", "", "inverse,bold,italic")
-		call <SID>X("Type", "9b703f", "", "")  
-		call <SID>X("Underlined", "", "", "underline")
-		call <SID>X("erubyExpression", "", "", "")
-		call <SID>X("rubyClass", "cda869", "", "")  
-		call <SID>X("rubyFunction", "9b703f", "", "")  
-		call <SID>X("rubyInterpolation", "DAEFA3", "", "")  
-		call <SID>X("rubyInterpolationDelimiter", "DAEFA3", "", "")  
-		call <SID>X("rubySymbol", "cf6a4c", "", "")  
-		call <SID>X("rubyConstant", "9b859d", "", "")  
-		call <SID>X("rubyStringDelimiter", "8f9d6a", "", "") 
+    call <SID>X("Statement", "cda869", "", "")
+    call <SID>X("StorageClass", "f9ee98", "", "")
+    call <SID>X("String", "8f9d6a", "", "")
+    call <SID>X("Tag", "9b703f", "", "")
+    call <SID>X("Title", "f8f8f8", "", "bold")
+    call <SID>X("Todo", "5f5a60", "", "inverse,bold,italic")
+    call <SID>X("Type", "9b703f", "", "")
+    call <SID>X("Underlined", "", "", "underline")
+    call <SID>X("erubyExpression", "", "", "")
+    call <SID>X("rubyClass", "cda869", "", "")
+    call <SID>X("rubyFunction", "9b703f", "", "")
+    call <SID>X("rubyInterpolation", "DAEFA3", "", "")
+    call <SID>X("rubyInterpolationDelimiter", "DAEFA3", "", "")
+    call <SID>X("rubySymbol", "cf6a4c", "", "")
+    call <SID>X("rubyConstant", "9b859d", "", "")
+    call <SID>X("rubyStringDelimiter", "8f9d6a", "", "")
 
-		call <SID>X("rubyBlockParameter", "7587a6", "", "") 
+    call <SID>X("rubyBlockParameter", "7587a6", "", "")
 
-		call <SID>X("rubyInstanceVariable", "7587a6", "", "") 
+    call <SID>X("rubyInstanceVariable", "7587a6", "", "")
 
-		call <SID>X("rubyInclude", "cda869", "", "")  
-		call <SID>X("rubyGlobalVariable", "7587a6", "", "") 
+    call <SID>X("rubyInclude", "cda869", "", "")
+    call <SID>X("rubyGlobalVariable", "7587a6", "", "")
 
-		call <SID>X("rubyRegexp", "e9c062", "", "")  
-		call <SID>X("rubyRegexpDelimiter", "e9c062", "", "")
-		call <SID>X("rubyRegexpSpecial", "e9c062", "", "")
+    call <SID>X("rubyRegexp", "e9c062", "", "")
+    call <SID>X("rubyRegexpDelimiter", "e9c062", "", "")
+    call <SID>X("rubyRegexpSpecial", "e9c062", "", "")
     call <SID>X("rubyRegexpAnchor", "9B703F", "", "")
     call <SID>X("rubyRegexpCharClass", "9B703F", "", "")
     call <SID>X("rubyRegexpQuantifier", "9B703F", "", "")
     call <SID>X("rubyRegexpEscape", "9B703F", "", "")
 
-		call <SID>X("rubyEscape", "cf6a4c", "", "")  
-		call <SID>X("rubyControl", "cda869", "", "")  
-		call <SID>X("rubyClassVariable", "7587a6", "", "") 
+    call <SID>X("rubyEscape", "cf6a4c", "", "")
+    call <SID>X("rubyControl", "cda869", "", "")
+    call <SID>X("rubyClassVariable", "7587a6", "", "")
 
-		call <SID>X("rubyOperator", "cda869", "", "")  
-		call <SID>X("rubyException", "cda869", "", "")  
-		call <SID>X("rubyPseudoVariable", "7587a6", "", "") 
+    call <SID>X("rubyOperator", "cda869", "", "")
+    call <SID>X("rubyException", "cda869", "", "")
+    call <SID>X("rubyPseudoVariable", "7587a6", "", "")
 
-		call <SID>X("rubyRailsUserClass", "9b859d", "", "") 
+    call <SID>X("rubyRailsUserClass", "9b859d", "", "")
 
-		call <SID>X("rubyRailsARAssociationMethod", "dad085", "", "")
+    call <SID>X("rubyRailsARAssociationMethod", "dad085", "", "")
 
-		call <SID>X("rubyRailsARMethod", "dad085", "", "") 
+    call <SID>X("rubyRailsARMethod", "dad085", "", "")
 
-		call <SID>X("rubyRailsRenderMethod", "dad085", "", "") 
+    call <SID>X("rubyRailsRenderMethod", "dad085", "", "")
 
-		call <SID>X("rubyRailsMethod", "dad085", "", "") 
+    call <SID>X("rubyRailsMethod", "dad085", "", "")
 
-		call <SID>X("erubyDelimiter", "ffffff", "", "")  
-		call <SID>X("erubyComment", "5e5960", "", "")
-		call <SID>X("erubyRailsMethod", "dad085", "", "") 
+    call <SID>X("erubyDelimiter", "ffffff", "", "")
+    call <SID>X("erubyComment", "5e5960", "", "")
+    call <SID>X("erubyRailsMethod", "dad085", "", "")
 
-		call <SID>X("htmlTag", "ac885b", "", "")
-		call <SID>X("htmlTagN", "ffffff", "", "")
-		call <SID>X("htmlEndTag", "ac885b", "", "")  
-		call <SID>X("htmlTagName", "ac885b", "", "")  
-		call <SID>X("htmlArg", "ac885b", "", "")  
-		call <SID>X("htmlSpecialChar", "cf6a4c", "", "") 
+    call <SID>X("htmlTag", "ac885b", "", "")
+    call <SID>X("htmlTagN", "ffffff", "", "")
+    call <SID>X("htmlEndTag", "ac885b", "", "")
+    call <SID>X("htmlTagName", "ac885b", "", "")
+    call <SID>X("htmlArg", "ac885b", "", "")
+    call <SID>X("htmlSpecialChar", "cf6a4c", "", "")
 
-		call <SID>X("javaScriptFunction", "f9ee98", "", "") 
+    call <SID>X("javaScriptFunction", "f9ee98", "", "")
 
-		call <SID>X("javaScriptRailsFunction", "dad085", "", "") 
+    call <SID>X("javaScriptRailsFunction", "dad085", "", "")
 
-		call <SID>X("javaScriptBraces", "ffffff", "", "")
-		call <SID>X("javaScriptMember", "9a859c", "", "")
-		call <SID>X("javaScriptNumber", "cf694b", "", "")
-		call <SID>X("javaScriptType", "7587a5", "", "")
+    call <SID>X("javaScriptBraces", "ffffff", "", "")
+    call <SID>X("javaScriptMember", "9a859c", "", "")
+    call <SID>X("javaScriptNumber", "cf694b", "", "")
+    call <SID>X("javaScriptType", "7587a5", "", "")
 
-		" The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
-		call <SID>X("javaScriptParen", "ffffff", "", "")
+    " The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
+    call <SID>X("javaScriptParen", "ffffff", "", "")
 
 
-		call <SID>X("yamlKey", "9b703f", "", "")  
-		call <SID>X("yamlAnchor", "7587a6", "", "")  
-		call <SID>X("yamlAlias", "7587a6", "", "")  
-		call <SID>X("yamlDocumentHeader", "8f9d6a", "", "") 
+    call <SID>X("yamlKey", "9b703f", "", "")
+    call <SID>X("yamlAnchor", "7587a6", "", "")
+    call <SID>X("yamlAlias", "7587a6", "", "")
+    call <SID>X("yamlDocumentHeader", "8f9d6a", "", "")
 
-		call <SID>X("cssURL", "7587a6", "", "")  
-		call <SID>X("cssFunctionName", "dad085", "", "")
-		call <SID>X("cssDefinition", "cf694b", "", "") 
+    call <SID>X("cssURL", "7587a6", "", "")
+    call <SID>X("cssFunctionName", "dad085", "", "")
+    call <SID>X("cssDefinition", "cf694b", "", "")
 
-		call <SID>X("cssColor", "ca773f", "", "")  
-		call <SID>X("cssPseudoClassId", "9b703f", "", "") 
+    call <SID>X("cssColor", "ca773f", "", "")
+    call <SID>X("cssPseudoClassId", "9b703f", "", "")
 
-		call <SID>X("cssClassName", "9b703f", "", "")  
-		call <SID>X("cssValueLength", "cf6a4c", "", "") 
+    call <SID>X("cssClassName", "9b703f", "", "")
+    call <SID>X("cssValueLength", "cf6a4c", "", "")
 
-		call <SID>X("cssCommonAttr", "cf6a4c", "", "")  
-		call <SID>X("cssBraces", "", "", "")  
+    call <SID>X("cssCommonAttr", "cf6a4c", "", "")
+    call <SID>X("cssBraces", "", "", "")
 
-		call <SID>X("cInclude", "afc3db", "", "")
-		call <SID>X("cType", "f9ed97", "", "")
-		call <SID>X("cSpecial", "daefa3", "", "")
-		call <SID>X("cppStructure", "f9ed97", "", "")
+    call <SID>X("cInclude", "afc3db", "", "")
+    call <SID>X("cType", "f9ed97", "", "")
+    call <SID>X("cSpecial", "daefa3", "", "")
+    call <SID>X("cppStructure", "f9ed97", "", "")
 
     hi def link markdownH1                    Function
     hi def link markdownH2                    Function
@@ -410,9 +410,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     hi def link markdownH6                    Function
     hi def link markdownHeadingDelimiter      markdownHeadingRule
 
-		call <SID>X("markdownCode", "", "2b2b2b", "")
-		call <SID>X("markdownCodeBackgroundColor", "", "2b2b2b", "")
-		call <SID>X("HighlightedBlock", "", "000000", "")
+    call <SID>X("markdownCode", "", "2b2b2b", "")
+    call <SID>X("markdownCodeBackgroundColor", "", "2b2b2b", "")
+    call <SID>X("HighlightedBlock", "", "000000", "")
 " ----------------------------------------------------------------------------------- "
 
     " delete functions {{{
