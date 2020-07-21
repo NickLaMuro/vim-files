@@ -1,6 +1,9 @@
 Vim Files
 =========
 
+**DEPRECATED**:  I am no longer using this repo as the contents of it have been
+integrated into my [dotfiles][].  Archived/Readonly for reference purposes.
+
 This is a collection of custom files that I used for vim that aren't really
 tied to any one plugin.  Feel free to use them for your own personal use and
 modify them freely.
@@ -54,3 +57,5 @@ The Scrooloose snipmate-snippets are also meant to overwrite the current
 snipmate snippets (and there is no good way with pathogen to do that), so I
 started to remove the duplicates that conflict with the default ones from
 snipmate.
+
+[dotfiles]: https://github.com/NickLaMuro/dotfiles
