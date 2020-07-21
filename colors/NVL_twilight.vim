@@ -236,26 +236,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 " ----------------------------------------------------------------------------------- "
 
-    call <SID>X("DiffAdd", "000000", "8fCd6a", "")
     call <SID>X("DiffAdd", "000000", "8F9D6A", "")
     call <SID>X("DiffDelete", "000000", "CF6A4C", "")
-    call <SID>X("DiffChange", "000000", "9FCD9A", "")
-    call <SID>X("DiffChange", "000000", "DDFFDD", "")
     call <SID>X("DiffChange", "000000", "AAFFAA", "")
-    call <SID>X("DiffText", "000000", "EEa0a0", "")
     call <SID>X("DiffText", "000000", "FFAAAA", "")
-
-    call <SID>X("diffAdded",   "00C200", "", "")
-    call <SID>X("diffRemoved", "C91B00", "", "")
-    call <SID>X("diffLine",    "00C5C7", "", "")
-    " call <SID>X("diffSubname", "00C5C7", "", "")
-    " hi def link diffSubname diffLine
-    hi def link diffFile    Identifier
-    " call <SID>X("diffFile", "C7C7C7", "", "")
-    call <SID>X("gitDiff", "C7C7C7", "", "")
-    " call <SID>X("gitcommitDiff", "C7C7C7", "", "")
-    hi def link gitcommitDiff gitDiff
-    hi def link diffSubname   gitDiff
 
     call <SID>X("Cursor", "708090", "f0e68c", "")
     call <SID>X("Visual", "", "4b4b4b", "")
@@ -314,6 +298,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Type", "9b703f", "", "")
     call <SID>X("Underlined", "", "", "underline")
 
+    " syntax/diff.vim, syntax/git.vim, and syntax/gitcommit.vim colors
+    call <SID>X("diffAddedColor",   "00C200", "", "")
+    call <SID>X("diffRemovedColor", "C91B00", "", "")
+    call <SID>X("diffLineColor",    "00C5C7", "", "")
+    call <SID>X("gitDiffColor",     "C7C7C7", "", "")
+
+    " custom color types
     call <SID>X("GenericColorClear", "", "", "")
     call <SID>X("GenericConstant", "9B859D", "", "")
     call <SID>X("GenericDefinition", "CF694B", "", "")
