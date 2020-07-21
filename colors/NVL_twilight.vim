@@ -316,15 +316,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("GenericRegexp", "E9C062", "", "")
 
     call <SID>X("HighlightedBlock", "", "000000", "")
-
-    call <SID>X("javaScriptFunction", "f9ee98", "", "")
-    call <SID>X("javaScriptBraces", "ffffff", "", "")
-    call <SID>X("javaScriptMember", "9a859c", "", "")
-    call <SID>X("javaScriptNumber", "cf694b", "", "")
-    call <SID>X("javaScriptType", "7587a5", "", "")
-
-    " The following syntaxes are a part of Yi Zhao's javascript.vim syntax highlighting vim script
-    call <SID>X("javaScriptParen", "ffffff", "", "")
 " ----------------------------------------------------------------------------------- "
 
     " delete functions {{{
